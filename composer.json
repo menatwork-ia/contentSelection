@@ -1,10 +1,10 @@
 {
-	"name":"menatwork/contentselection",
-	"description":"Show or hide content elements for os and browser",
+	"name": "menatwork/contentselection",
+	"description": "Show or hide content elements for os and browser",
 	"keywords":["content elements","browser","os","detection"],
-	"type":"contao-module",
-	"homepage":"http://www.men-at-work.de",
-	"license":"LGPL-3.0+",
+	"type": "contao-bundle",
+	"homepage": "http://www.men-at-work.de",
+	"license": "LGPL-3.0-or-later",
 	"authors":[
 		{
 			"name":"Andreas Isaak",
@@ -23,6 +23,12 @@
 			"email":"heimes@men-at-work.de",
 			"homepage":"http://www.men-at-work.de",
 			"role":"Developer"
+		},
+		{
+			"name":"Andreas Dziemba",
+			"email":"dziemba@men-at-work.de",
+			"homepage":"http://www.men-at-work.de",
+			"role":"Developer"
 		}
 	],
 	"support":{
@@ -32,23 +38,20 @@
 		"source":"https://github.com/menatwork-ia/contentSelection"
 	},
 	"require":{
-		"php":">=5.3",
-		"contao/core":">=2.11,<4",
-		"contao-community-alliance/composer-installer":"*",
-		"menatwork/agentselection":"~1.2",
-		"menatwork/contao-multicolumnwizard": "~3.3"
+		"php":"^7.0",
+		"contao/core-bundle": "^4.4",
+		"menatwork/contao-multicolumnwizard":"~3.3"
 	},
 	"autoload":{
-		"classmap":["system/"]
+		"psr-4": {
+			"MenAtWork\\ContentSelectionBundle\\": "src"
+		}
 	},
 	"replace":{
 		"contao-legacy/contentselection":"*"
 	},
-	"extra":{
-		"contao":{
-			"sources":{
-				"system/modules/z_contentSelection":"system/modules/z_contentSelection"
-			}
-		}
-	}
+	"extra": {
+		"contao-manager-plugin": "MenAtWork\\ContentSelectionBundle\\ContaoManager\\Plugin"
+	},
+	"minimum-stability": "dev"
 }
