@@ -3,8 +3,8 @@
 /**
  * Contao Open Source CMS
  *
- * @copyright  MEN AT WORK 2014
- * @package    contentSelection
+ * @copyright  MEN AT WORK 2018
+ * @package    MenAtWork\ContentSelectionBundle
  * @license    GNU/LGPL
  * @filesource
  */

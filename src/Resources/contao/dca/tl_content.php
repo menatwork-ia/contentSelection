@@ -10,7 +10,7 @@
  */
 
 /**
- * Lists
+ * Lists 
  */
 $GLOBALS['TL_DCA']['tl_content']['list']['sorting']['child_record_callback'] = array('MenAtWork\ContentSelectionBundle\\Contao\\Controller\\ContentSelectController', 'childRecordCallback');
 
@@ -24,7 +24,7 @@ foreach ($GLOBALS['TL_DCA']['tl_content']['palettes'] as $key => $row)
         continue;
     }
 
-    $arrPalettes = explode(";", $row);
+    $arrPalettes = explode(";", $row);    
     $arrPalettes[] = '{contentSelection_legend},contentSelection';
 
     $GLOBALS['TL_DCA']['tl_content']['palettes'][$key] = implode(";", $arrPalettes);

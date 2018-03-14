@@ -50,8 +50,7 @@
 	"replace":{
 		"contao-legacy/contentselection":"*"
 	},
-	"extra": {
+    "extra": {
 		"contao-manager-plugin": "MenAtWork\\ContentSelectionBundle\\ContaoManager\\Plugin"
-	},
-	"minimum-stability": "dev"
+    }
 }

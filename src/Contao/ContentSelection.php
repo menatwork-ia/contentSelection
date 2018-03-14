@@ -39,7 +39,7 @@ class ContentSelection extends \Backend
             $arrSelector['cs_client_os'] = ($arrSelector['cs_client_os'] != '') ? array(
                 'value' => $arrSelector['cs_client_os'],
                 'config' => $GLOBALS['TL_CONFIG']['os'][$arrSelector['cs_client_os']]
-            ) : false;
+                    ) : false;
             $arrSelector['cs_client_browser']   = ($arrSelector['cs_client_browser'] != '') ? $GLOBALS['TL_CONFIG']['browser'][$arrSelector['cs_client_browser']] : false;
             $arrSelector['cs_client_is_mobile'] = (($arrSelector['cs_client_is_mobile'] != '') ? (($arrSelector['cs_client_is_mobile'] == 1) ? true : false) : 'empty');
 
